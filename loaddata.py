@@ -12,7 +12,7 @@ def getvals(items):
     return ', '.join(str(item) for item in items)
 
 def getinsert(keys,values):
-    return "INSERT INTO ciscometrics.raw_metrics ("+getvals(keys)+") VALUES ("+getvals(values)+");"
+    return "INSERT INTO "+sys.argv[3]+" ("+getvals(keys)+") VALUES ("+getvals(values)+");"
 
 def create_insert(row):
     keys = ['pod']
