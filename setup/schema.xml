@@ -12,9 +12,9 @@
 <fieldType class="org.apache.solr.schema.TrieFloatField" name="TrieFloatField"/>
 </types>
 <fields>
-<field indexed="false" multiValued="false" name="pod" stored="false" type="StrField"/>
-<field indexed="false" multiValued="false" name="host" stored="false" type="StrField"/>
-<field indexed="false" multiValued="false" name="time" stored="false" type="TrieDateField"/>
+<field indexed="true" multiValued="false" name="pod" stored="false" type="StrField"/>
+<field indexed="true" multiValued="false" name="host" stored="false" type="StrField"/>
+<field indexed="true" multiValued="false" name="time" stored="false" type="TrieDateField"/>
 <field indexed="true" multiValued="false" name="plugin" stored="true" type="StrField"/>
 <field indexed="true" multiValued="false" name="value" stored="true" type="TrieFloatField"/>
 <field indexed="true" multiValued="false" name="type" stored="true" type="StrField"/>
