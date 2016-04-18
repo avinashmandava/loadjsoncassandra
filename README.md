@@ -7,7 +7,7 @@ To run all parts of the project have DSE started in search mode. To run the data
 To run the whole simulation, configure your schema.xml file to the appropriate schema and run:
 
 ```
-./loadandindex.sh <pathtodseinstall> <json datafile path> <datamodelfile path> <cassandra host ip> <keyspace.table>
+./loadandindex.sh <pathtodseinstall> <json datafile path> <datamodelfile path> <dse host ip> <keyspace.table>
 ```
 
 For example, to run the example in this folder (make sure to add the '/' at the end for the dse install path):
@@ -25,10 +25,10 @@ The command is the same as above, but use the load.sh script to avoid indexing.
 ##Indexing after loading
 If you decide to index your data after you load it, run:
 ```
-./index.sh <dse install path> <keyspace.table>
+./index.sh <dse install path> <keyspace.table> <dse host>
 ```
 For example
 ```
-./index.sh ~/dse-4.8.0/ metrics.raw_metrics
+./index.sh ~/dse-4.8.0/ metrics.raw_metrics 127.0.0.1
 ```
 Remember to edit your schema.xml file before starting indexing.
