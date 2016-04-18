@@ -1,6 +1,8 @@
 ##Intro
 This project allows you to supply a cql file, a json file, and a cassandra host and then creates the data model and loads up the JSON (as long as the data model represents all possible JSON fields). Note that this assumes the file provided has a new JSON object on each line, and assumes no nesting. Edit loaddata.py to change the parsing logic.
 
+To run all parts of the project have DSE started in search mode. To run the data load only, cassandra-only mode is fine.
+
 ##Running the project
 To run the whole simulation, configure your schema.xml file to the appropriate schema and run:
 
