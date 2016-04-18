@@ -23,7 +23,7 @@ The command is the same as above, but use the load.sh script to avoid indexing.
 ##Indexing after loading
 If you decide to index your data after you load it, run:
 ```
-./index.sh <dse install path> <keyspace.table
+./index.sh <dse install path> <keyspace.table>
 ```
 For example
 ```
